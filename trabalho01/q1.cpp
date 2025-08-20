@@ -7,7 +7,7 @@ int main(){
     int tamanhoArray =  sizeof(num_inteiros)/sizeof(num_inteiros[0]);
 
     for (int i = 0; i < tamanhoArray; i++){
-        printf("%i \n",  num_inteiros[i]);
+        printf("%d \n",  num_inteiros[i]);
 
     }
 
