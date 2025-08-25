@@ -19,6 +19,6 @@ int main(){
 
     // mostrar o vetor par
     for (int b = 0; b < count; b++){
-        printf("Vetor copiado : %d \n", array_num_pares[b]);
+        printf("Vetor par : %d \n", array_num_pares[b]);
     }
 }

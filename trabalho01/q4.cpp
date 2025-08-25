@@ -3,7 +3,13 @@
 int main(){
     // Leia 10 números e conte quantos são pares
 
-    int numeros [10] = {72, 14, 59, 91, 37, 100, 62, 4, 88, 22};
+    int numeros [10];
+    
+    printf("Insira 10 numeros: ");
+    for (int i = 0; i < 10; i++) {
+		scanf("%d", & numeros[i]);
+	}
+	
     int tamanhoArray = sizeof(numeros)/sizeof(numeros[0]);
 
     int quant_numPares = 0;

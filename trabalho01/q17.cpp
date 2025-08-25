@@ -21,7 +21,7 @@ int main(){
         }
     }
 
-    printf("\nElementos do array em ordem:\n");
+    printf("\nElementos do array em ordem (pares e depois ímpares):\n");
     for (int i = 0; i < tamanhoArray; i++) {
         printf("%d \n", numeros[i]);
     }

@@ -3,7 +3,13 @@
 int main(){
     // Leia 10 números e calcule a média
     
-    float numeros [10] = {9.4, 6.7, 3.2, 10, 7.8, 5.5, 2, 8.3, 4.6, 0.9};
+    float numeros [10];
+    
+    printf("Insira 10 numeros: ");
+    for (int i = 0; i < 10; i++) {
+		scanf("%f", & numeros[i]);
+	}
+    
     int tamanhoArray = sizeof(numeros)/sizeof(numeros[0]);
 
     float soma = 0;

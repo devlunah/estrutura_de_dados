@@ -20,7 +20,7 @@ int main(){
     }
     // mostrar o vetor par
     for (int b = 0; b < count; b++){
-        printf("Vetor copiado : %d \n", array_num_pares[b]);
+        printf("Numeros pares: %d \n", array_num_pares[b]);
     }
 
     // calcular média
@@ -28,9 +28,9 @@ int main(){
         soma += array_num_pares[b];
     }
 
-    printf("%d \n", count);
+    //printf("%d \n", count);
 
     float media = soma / count;
-    printf("%.2f \n", media);
+    printf("Media: %.2f \n", media);
 
 }
