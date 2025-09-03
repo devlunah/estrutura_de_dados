@@ -26,8 +26,6 @@ int main(){
             }            
         }
         printf("Numero %d repetido %d vez(es).\n", numeros[i], contador);
-        contador = 0;
-    
+        contador = 0;    
     } 
-
 }
