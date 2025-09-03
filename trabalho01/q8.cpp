@@ -3,7 +3,14 @@
 int main(){
     // Leia 10 números e calcule a soma total
 
-    int numeros [10] = {23, -18, 2, 9, -37, 59, -22, 27, 44, -6};
+    int numeros [10];
+    //23, -18, 2, 9, -37, 59, -22, 27, 44, -6
+    
+    printf("Insira 10 numeros: ");
+    for (int i = 0; i < 10; i++) {
+		scanf("%d", & numeros[i]);
+	}
+	
     int tamanhoArray = sizeof(numeros)/sizeof(numeros[0]);
 
     int somaTotal = 0;
