@@ -17,4 +17,6 @@ int main(){
 
     printf("Resultado da soma: %d \n", soma);
 
+    return 0;
+
 }

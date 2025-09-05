@@ -25,4 +25,6 @@ int main(){
 
     printf("Maior valor: %d e Menor valor: %d", maior_valor, menor_valor);
 
+    return 0;
+
 }

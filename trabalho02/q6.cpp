@@ -15,4 +15,6 @@ int main(){
     for(int i = 4; i >= 0; i--){
         printf(" %s", &nomes[i]);
     }
+
+    return 0;
 }

@@ -17,4 +17,6 @@ int main(){
             printf("%d \n", num_inteiros[a]);
         }
     }
+    
+    return 0;
 }
