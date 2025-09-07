@@ -1,31 +1,48 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
-Crie uma função inverter_vetor que receba um vetor e dois índices, inicio e fim. 
-O caso base é quando inicio >= fim. 
-O caso recursivo é trocar os elementos nas posições inicio e fim e chamar a função novamente com inicio + 1 e fim - 1.
-*/ 
+void inverter_vetor(int *vet, int tam, int inicio, int fim){
+    int aux;
 
-int inverter_vetor(int *vet, int tam, int inicio, int fim){
-    if(inicio >= fim){
-        return inicio;
-    }else{
+    // primeiro modo de fazer usando if else:
+    // if(inicio >= fim){    
+    //     return;
 
+    // }else{
+    //     aux = vet[inicio];
+    //     //printf("%d \n", aux);
+    //     vet[inicio] = vet[fim];
+    //     //printf("%d \n", vet[inicio]);
+    //     vet[fim] = aux;
+    //     //printf("%d \n", vet[fim]);
+
+    //     inverter_vetor(vet, tam, inicio+1, fim-1);
+    // }
+
+    // segundo modo de fazer usando while:
+    while(inicio < fim){
+        aux = vet[inicio];
+        vet[inicio] = vet[fim];
+        vet[fim] = aux;
+
+        inverter_vetor(vet, tam, inicio+1, fim-1);
+        break;
     }
-    
-
 }
 
 int main(){
     int vetor [5] = {5, 10, 15, 20, 25};
     int tamanhoVetor = sizeof(vetor)/sizeof(vetor[0]);
 
-    int indice_inicio = vetor[0];
-    int indice_fim = vetor[tamanhoVetor-1];
+    int indice_inicio = 0;
+    int indice_fim = tamanhoVetor-1;
 
-    printf("Vetor invertido: ", inverter_vetor(vetor, 5, indice_inicio, indice_fim));
+    printf("Vetor invertido: \n");
+    inverter_vetor(vetor, 5, indice_inicio, indice_fim);
+
+    for(int i = 0; i < tamanhoVetor; i++){
+        printf("%d \n", vetor[i]);
+    }
 
     return 0;
-
 }

@@ -1,29 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
-Crie uma função maior_elemento_recursivo que receba um vetor e seu tamanho n. 
-O caso base é se n for 1, a função retorna o único  elemento. 
-O caso recursivo é comparar o último elemento (vetor[n - 1]) com o resultado da chamada recursiva 
-para o restante do vetor e retornar o maior dos dois.
-*/ 
-
 int maior_elemento_recursivo(int *vet, int n){
     if(n == 1){
-        return n;
+        return vet[0];
 
     }else{
-
-
+        int maior_valor = maior_elemento_recursivo(vet, n-1);
+        if(vet[n - 1] > maior_valor){
+            return vet[n-1];
+        }else{
+            return maior_valor;
+        }
     }
-
 }
 
 int main(){
     
-    int vetor [4] = {2, 4, 6, 8};
+    int vetor [5] = {1, 5, 6, 2, 4};
 
-    printf("Maior elemento: ", maior_elemento_recursivo(vetor, 4));
+    printf("Maior elemento: %d", maior_elemento_recursivo(vetor, 5));
     return 0;
 
 }
