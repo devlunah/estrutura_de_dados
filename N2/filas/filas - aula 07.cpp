@@ -18,7 +18,7 @@ void enqueue(int valor){ //enfileirar
 	if(frente == -1) frente = 0;
 	//printf("Frente na funcao enqueue:: %d \n", frente);
 	//printf("Tras na funcao enqueue: %d \n", tras);
-	fila[++tras] = valor;  // incrementar e depois usar a variável
+	fila[++tras] = valor;  // incrementar e depois usar a variï¿½vel
 	//printf("Enfileirado: %d \n", valor);
 }
 
@@ -28,7 +28,7 @@ void dequeue(){
 		printf("Fila vazia! \n");
 		return;
 	}
-	printf("Desenfileirado: %d \n", fila[frente++]); // usar e depois incrementar a variável
+	printf("Desenfileirado: %d \n", fila[frente++]); // usar e depois incrementar a variï¿½vel
 	// ao passar fila[frente++], eu pego o valo
 }
 
